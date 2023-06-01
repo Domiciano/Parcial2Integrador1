@@ -23,6 +23,7 @@ public class TasksController {
     /**
      * Crea una nueva tarea y la almacena en la base de datos. La tarea se crea con el estado "ToDo" de forma automática.
      * @param task La tarea a crear. Debe ser un objeto JSON con la estructura de la entidad Task.
+     *             Ejemplo de JSON: {"title":"Alfa", "description":"Esta es la tarea alfa"}
      * @return ResponseEntity con el mensaje de respuesta indicando que la tarea se almacenó exitosamente.
      */
     @PostMapping(value = "tasks/create", consumes = "application/json", produces = "application/json")
